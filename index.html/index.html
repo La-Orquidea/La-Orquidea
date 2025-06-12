@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>La Orquídea - Café de Haba</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header-bg {
+            background-color: #5C2D3D;
+            color: #fff;
+        }
+        .text-primary-color {
+            color: #5C2D3D;
+        }
+        .btn-primary {
+            background-color: #5C2D3D;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #7A3D52;
+        }
+        .section-heading {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #5C2D3D;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer-bg {
+            background-color: #333;
+            color: #eee;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .product-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .detail-box {
+            background-color: #f2f2f2;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #5C2D3D;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-bg py-6 shadow-lg">
+        <div class="container flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="logo blanco sin fondo.png" alt="Logo La Orquídea" class="w-25 h-20 mr-4"/>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#about" class="hover:text-gray-300">Sobre Nosotros</a></li>
+                    <li><a href="#product" class="hover:text-gray-300">Nuestro Producto</a></li>
+                    <li><a href="#gallery" class="hover:text-gray-300">Galería</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-gray-100 py-20 text-center">
+        <div class="container">
+            <h2 class="text-5xl font-extrabold text-primary-color mb-6">Café de Haba: Sabor y Tradición</h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Hecho con dedicación por estudiantes de la Unidad Educativa Paquisha,
+                disfruta de la calidad que solo "La Orquídea" te puede ofrecer.
+            </p>
+            <a href="#product" class="btn-primary text-xl font-semibold inline-block">Descubre más</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="about" class="py-16">
+        <div class="container">
+            <h2 class="section-heading">Sobre Nosotros</h2>
+            <div class="card">
+                <p class="text-lg text-gray-700 mb-4">
+                    "La Orquídea" es un proyecto nacido del compromiso y la pasión de los estudiantes de la Unidad Educativa Paquisha, en Piñas, El Oro. Nos dedicamos a la elaboración artesanal de café de haba, un producto único que rescata las tradiciones locales y ofrece una experiencia de sabor excepcional.
+                </p>
+                <p class="text-lg text-gray-700">
+                    Nuestra misión es no solo brindar un café de alta calidad, sino también fomentar el desarrollo educativo y comunitario a través de prácticas sostenibles y responsables. Cada grano de café es un reflejo de nuestro esfuerzo y amor por lo que hacemos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestro Producto -->
+    <section id="product" class="bg-gray-100 py-16">
+        <div class="container">
+            <h2 class="section-heading">Nuestro Producto: Café de Haba</h2>
+            <div class="card flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+                    <img src="10.jpg" alt="La Orquídea Café de Haba" class="w-full h-auto rounded-lg shadow-lg"/>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold text-primary-color mb-4">Café de Haba Libre de Cafeína</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Nuestro café de haba es una alternativa deliciosa y saludable, perfecta para aquellos que buscan disfrutar del sabor del café sin los efectos de la cafeína. Producido con habas seleccionadas cuidadosamente, garantizamos un aroma y un cuerpo inigualables.
+                    </p>
+                    <div class="product-details-grid">
+                        <div class="detail-box">Peso Neto: <strong>250 grs</strong></div>
+                        <div class="detail-box">Procesado en: <strong>Piñas, El Oro</strong></div>
+                        <div class="detail-box">Elaborado por: <strong>Valentín Jaramillo y Wagner Jiménez</strong></div>
+                        <div class="detail-box">Tipo: <strong>Libre de Cafeína</strong></div>
+                    </div>
+                    <p class="text-md text-gray-600 mt-4">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="gallery" class="py-16">
+        <div class="container">
+            <h2 class="section-heading">Galería</h2>
+            <div class="image-gallery">
+                <img src="10.jpg" alt="Producto La Orquídea">
+                <img src="12.jpg" alt="Proceso de Elaboración">
+                <img src="13.jpg" alt="Empaque de La Orquídea">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="container text-center">
+            <h2 class="section-heading">Contáctanos</h2>
+            <div class="card max-w-xl mx-auto">
+                <p class="text-lg text-gray-700 mb-4">
+                    ¡Estamos encantados de resolver tus dudas y atender tus pedidos! Contáctanos a través de los siguientes medios:
+                </p>
+                <p class="text-xl font-bold text-primary-color mb-2">Teléfono: 0986645909</p>
+                <a class="text-xl font-bold text-primary-color">Email: cafelaorquidea@outlook.es </p>
+                <a href="https://wa.me/593986645909" target="_blank" class="btn-primary mt-6 inline-block font-semibold">
+                    Enviar Mensaje por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg py-8 text-center text-sm">
+        <div class="container">
+            <p>&copy; 2024 La Orquídea. Todos los derechos reservados.</p>
+            <p>Hecho con dedicación por estudiantes de la Unidad Educativa Paquisha.</p>
+            <p class="mt-2">Dirección: Piñas, El Oro, Ecuador.</p>
+        </div>
+    </footer>
+
+    <!-- Fecha dinámica -->
+    <script>
+        document.getElementById("fecha").textContent = new Date().toLocaleDateString("es-EC");
+    </script>
+
+</body>
+</html>
